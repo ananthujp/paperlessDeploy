@@ -8,6 +8,8 @@ import Letter from "./Letter"
 import {motion, AnimatePresence} from "framer-motion"
 import Design3 from './Design3';
 import Footer from './Footer'
+import LogoW from "./media/LogoW.svg"
+import LogoD from "./media/iitgnlogo.svg"
 function Cards() {
     const location = useLocation();
     const opened = useSelector(stateOpened);
@@ -33,12 +35,12 @@ function Cards() {
                <Design3 message={docs.message} img={docs.src} from={docs.from}/> 
             </motion.div>:
             <></>}
-            <div className="w-1/2 lg:1/5 md:h-1/4 h-1/3 flex mx-auto my-auto">
+            <div className="w-1/2 lg:1/5 md:h-1/4 h-1/4 flex mx-auto my-auto">
             <h1 className="text-white md:text-4xl text-2xl font-treb mx-auto my-auto text-center">
                     Hi {docs.to}, you have a letter from {docs.from}
-                </h1>
+            </h1>
             </div>
-            <div className="md:w-1/3 w-1/2 md:h-1/2 h-2/3 mx-auto my-auto">
+            <div className="md:w-1/3 w-1/2 md:h-1/2 h-2/4 mx-auto my-auto">
                 
             {opened?<motion.div
                     className=""
@@ -52,9 +54,20 @@ function Cards() {
                     animate={{scale:(1.1,1.1),y:0,transition:{duration:0.5,delay:0.5}}}
                     exit={{scale:(1,1),y:-400,transition:{duration:0.5,delay:1.5, when: "beforeChildren"}}}>
                         <Letter/>
+                        <h1 className="text-white text-center mt-4 animate-pulse">Click on the letter to open</h1>
                 </motion.div>}
                 
             </div>
+            <motion.div initial={{scale:(0.1,0.1),y:0}}
+                    animate={{scale:(1,1),y:0,transition:{duration:0.2,delay:1.0,type: 'spring', damping: 150 }}}
+                    exit={{scale:(1,1),y:-400,transition:{duration:0.5,delay:1.5, when: "beforeChildren"}}}
+                    className="h-1/7 mx-auto  flex">
+                <div className="mx-auto  flex flex-row bg-white rounded-xl p-2">
+                    <img className="w-11 -mt-2 mx-2 max-w-none" src={LogoD} alt=""/>
+                    <div className="flex border-r-2 border-gray-300"></div>
+                    <img className="w-12 max-w-none mx-2" src={LogoW} alt=""/>
+                </div>
+            </motion.div>
         </motion.div>
         </AnimatePresence>
     )

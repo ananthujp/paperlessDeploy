@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
         'des1-circle1':"url('./media/bg.svg')",
         'des1-lamp1':"url('./media/lamps.svg')",
+        'homebg':"url('./media/Homebg.svg')",
       }
     },
   },

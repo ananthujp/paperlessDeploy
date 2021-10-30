@@ -15,7 +15,7 @@ function Footer() {
                 {/* <img className="w-28" alt="" src={LogoD}/> */}
             </div>
             
-            <div className="bg-gradient-to-br h-3/4 from-purple-500 to-indigo-500 p-4 text-white rounded-xl shadow-xl drop-shadow-xl">
+            <div className="bg-gradient-to-br from-purple-500 to-indigo-500 p-4 text-white rounded-xl shadow-xl drop-shadow-xl">
                 Make a paper free wish
             </div>
             <div className="flex  flex-row px-2 transform scale-75">

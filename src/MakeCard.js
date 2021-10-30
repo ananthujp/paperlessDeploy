@@ -11,6 +11,7 @@ import { ThemeProvider,createTheme} from '@mui/material/styles';
 import { deepPurple } from '@mui/material/colors';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Checkbox from '@mui/material/Checkbox';
+import CircularProgress from '@mui/material/CircularProgress';
 import {WhatsappShareButton,WhatsappIcon,TwitterShareButton,TwitterIcon,FacebookShareButton,FacebookIcon} from "react-share"
 import des3 from "./media/des3.png"
 import Design3 from "./Design3"
@@ -68,6 +69,7 @@ function MakeCard() {
             }
         }
         else{
+            setError(5);
         addDoc(collection(db, "cards"), {
             from: (from?from:user.displayName),
             message: message,
@@ -97,6 +99,9 @@ function MakeCard() {
                 <div className="w-screen absolute z-20 h-full ">
                 <div className="w-screen h-1/4 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-60 border border-gray-200"></div>
                 <div className="w-screen flex h-3/4 flex-col  bg-gradient-to-br from-purple-500 to-indigo-500 ">
+                    <div  className="mx-auto flex cursor-pointer" onClick={()=>setCreated(!created)}><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg></div>
                     <h1 className="text-6xl font-beb mx-auto mt-3 text-white">Congratulations!</h1>
                     <h1 className="text-2xl -mt-0 font-beb mx-auto text-white">You have succesully created your card</h1>
                     <div className="flex flex-row mx-auto my-5">
@@ -186,7 +191,7 @@ function MakeCard() {
                 </div>
                 <div className="flex flex-col h-20 justify-between">
                 <Button variant="outlined" onClick={() => setPreview(true)}>Preview</Button>
-                <Button variant="contained"  onClick={handleSubmit}>Create</Button>
+                <Button variant="contained"  onClick={handleSubmit}>{(error==="5")?<CircularProgress style={{padding: "6px"}} color="inherit"/>:"Create"}</Button>
                     
                 </div>
                 </ThemeProvider>
