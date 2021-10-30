@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/paperlessDeploy/static/css/main.d3092544.chunk.css",
-    "main.js": "/paperlessDeploy/static/js/main.c0513760.chunk.js",
-    "main.js.map": "/paperlessDeploy/static/js/main.c0513760.chunk.js.map",
-    "runtime-main.js": "/paperlessDeploy/static/js/runtime-main.7b437357.js",
-    "runtime-main.js.map": "/paperlessDeploy/static/js/runtime-main.7b437357.js.map",
-    "static/js/2.a12ad265.chunk.js": "/paperlessDeploy/static/js/2.a12ad265.chunk.js",
-    "static/js/2.a12ad265.chunk.js.map": "/paperlessDeploy/static/js/2.a12ad265.chunk.js.map",
-    "index.html": "/paperlessDeploy/index.html",
-    "static/css/main.d3092544.chunk.css.map": "/paperlessDeploy/static/css/main.d3092544.chunk.css.map",
-    "static/js/2.a12ad265.chunk.js.LICENSE.txt": "/paperlessDeploy/static/js/2.a12ad265.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/paperlessDeploy/static/media/trebuc.8dc5d2dd.ttf",
-    "static/media/LogoW.37cd8117.svg": "/paperlessDeploy/static/media/LogoW.37cd8117.svg",
-    "static/media/des1.a7f4f1b5.png": "/paperlessDeploy/static/media/des1.a7f4f1b5.png",
-    "static/media/des2.ae454d6d.png": "/paperlessDeploy/static/media/des2.ae454d6d.png",
-    "static/media/des2.ec92f496.svg": "/paperlessDeploy/static/media/des2.ec92f496.svg",
-    "static/media/des3.00d9e46a.png": "/paperlessDeploy/static/media/des3.00d9e46a.png",
-    "static/media/des4.775a41fb.png": "/paperlessDeploy/static/media/des4.775a41fb.png",
-    "static/media/iitgnlogo.112de705.svg": "/paperlessDeploy/static/media/iitgnlogo.112de705.svg"
+    "main.css": "./static/css/main.2aa65988.chunk.css",
+    "main.js": "./static/js/main.9e458d3e.chunk.js",
+    "main.js.map": "./static/js/main.9e458d3e.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2dfd0e20.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2dfd0e20.js.map",
+    "static/js/2.82e2e291.chunk.js": "./static/js/2.82e2e291.chunk.js",
+    "static/js/2.82e2e291.chunk.js.map": "./static/js/2.82e2e291.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.2aa65988.chunk.css.map": "./static/css/main.2aa65988.chunk.css.map",
+    "static/js/2.82e2e291.chunk.js.LICENSE.txt": "./static/js/2.82e2e291.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/trebuc.8dc5d2dd.ttf",
+    "static/media/LogoW.37cd8117.svg": "./static/media/LogoW.37cd8117.svg",
+    "static/media/des1.a7f4f1b5.png": "./static/media/des1.a7f4f1b5.png",
+    "static/media/des2.ae454d6d.png": "./static/media/des2.ae454d6d.png",
+    "static/media/des2.ec92f496.svg": "./static/media/des2.ec92f496.svg",
+    "static/media/des3.00d9e46a.png": "./static/media/des3.00d9e46a.png",
+    "static/media/des4.775a41fb.png": "./static/media/des4.775a41fb.png",
+    "static/media/iitgnlogo.112de705.svg": "./static/media/iitgnlogo.112de705.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b437357.js",
-    "static/js/2.a12ad265.chunk.js",
-    "static/css/main.d3092544.chunk.css",
-    "static/js/main.c0513760.chunk.js"
+    "static/js/runtime-main.2dfd0e20.js",
+    "static/js/2.82e2e291.chunk.js",
+    "static/css/main.2aa65988.chunk.css",
+    "static/js/main.9e458d3e.chunk.js"
   ]
 }
