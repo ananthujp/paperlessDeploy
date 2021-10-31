@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/paperlessDeploy/static/css/main.7dcceca2.chunk.css",
-    "main.js": "/paperlessDeploy/static/js/main.9db8addf.chunk.js",
-    "main.js.map": "/paperlessDeploy/static/js/main.9db8addf.chunk.js.map",
+    "main.js": "/paperlessDeploy/static/js/main.51c100fc.chunk.js",
+    "main.js.map": "/paperlessDeploy/static/js/main.51c100fc.chunk.js.map",
     "runtime-main.js": "/paperlessDeploy/static/js/runtime-main.7b437357.js",
     "runtime-main.js.map": "/paperlessDeploy/static/js/runtime-main.7b437357.js.map",
     "static/js/2.2c43d79a.chunk.js": "/paperlessDeploy/static/js/2.2c43d79a.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.7b437357.js",
     "static/js/2.2c43d79a.chunk.js",
     "static/css/main.7dcceca2.chunk.css",
-    "static/js/main.9db8addf.chunk.js"
+    "static/js/main.51c100fc.chunk.js"
   ]
 }
