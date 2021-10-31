@@ -3,6 +3,7 @@ import './App.css';
 import Cards from './Cards.js';
 import Home from "./Home"
 import {Switch, Route, useLocation} from "react-router-dom";
+import HashRouter from 'react-router-dom/BrowserRouter'
 import { AnimatePresence } from "framer-motion";
 function App() {
   const location = useLocation();
@@ -11,7 +12,7 @@ function App() {
     <div>
       <AnimatePresence exitBeforeEnter initial={false}>
       <Switch location={location} key={location.pathname}>
-      <Route exact path={["/", "/Home"]} >
+      <Route exact path={"/"} >
         <Home/>
       </Route>
       <Route path={"/Cards"} >

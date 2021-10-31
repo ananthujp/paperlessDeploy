@@ -6,8 +6,7 @@ import {db} from "./firebase"
 import {doc,getDoc} from "firebase/firestore"
 import Letter from "./Letter"
 import {motion, AnimatePresence} from "framer-motion"
-import Design3 from './Design3';
-import Footer from './Footer'
+import Design from './Design';
 import LogoW from "./media/LogoW.svg"
 import LogoD from "./media/iitgnlogo.svg"
 function Cards() {
@@ -31,8 +30,8 @@ function Cards() {
                 initial={{height:0,width:"33%",top:"50%",left:"33%"}}
                 animate={{height:"100%",width:"100%",top:"0%",left:"0",transition:{duration:0.5,delay:1.2}}}
                 >
-                <Footer/>
-               <Design3 message={docs.message} img={docs.src} from={docs.from}/> 
+                {/* <Footer/> */}
+               <Design message={docs.message} img={docs.src} from={docs.from} clr={docs.col} des={docs.des}/> 
             </motion.div>:
             <></>}
             <div className="w-1/2 lg:1/5 md:h-1/4 h-1/4 flex mx-auto my-auto">

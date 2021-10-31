@@ -14,9 +14,9 @@ import LogoD from "./media/iitgnlogo.svg"
 function Home() {
     const user=useSelector(selectUser);
     const dispatch = useDispatch();
-    useEffect(() => {
-        auth.signOut();
-    }, [])
+    // useEffect(() => {
+    //     auth.signOut();
+    // }, [])
     useEffect(() => {
      
         auth.onAuthStateChanged((authUser)=> {

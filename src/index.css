@@ -11,6 +11,10 @@
       font-family: 'Trebuchet';
       src: local('Trebuchet'), url(/src/fonts/trebuc.ttf);
     }
+    @font-face {
+      font-family: 'Gloria';
+      src: local('Gloria'), url(/src/fonts/Timothy-Regular.ttf);
+    }
   }
   @layer components {
 

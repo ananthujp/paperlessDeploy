@@ -13,8 +13,12 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import Checkbox from '@mui/material/Checkbox';
 import CircularProgress from '@mui/material/CircularProgress';
 import {WhatsappShareButton,WhatsappIcon,TwitterShareButton,TwitterIcon,FacebookShareButton,FacebookIcon} from "react-share"
+import des1 from "./media/des1.png"
+import des2 from "./media/des2.png"
 import des3 from "./media/des3.png"
-import Design3 from "./Design3"
+import des4 from "./media/des4.png"
+import Design from "./Design"
+import colorsClass from "./Colors"
 const theme = createTheme({
     components: {
         MuiTypography: {
@@ -43,7 +47,8 @@ function MakeCard() {
     const dispatch = useDispatch();
     const user=useSelector(selectUser);
     const [avatar,setAvatar]=useState(true)
-    const [des,setDes]=useState(0)
+    const [des,setDes]=useState(4)
+    const [col,setCol]=useState(0)
     const [preview,setPreview]=useState(false)
     const [created,setCreated]=useState(false)
     const [message,setMessage]=useState("")
@@ -75,9 +80,12 @@ function MakeCard() {
             message: message,
             src:avatar?user.photo:null,
             to:to,
+            col: col,
+            des:des,
           }).then(doc=>{setUrl(baseUrl+doc.id);setCreated(true)});
         }
     }
+
     const handleHome=()=>{
         dispatch(
             logout());
@@ -90,8 +98,8 @@ function MakeCard() {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                     </div></div>
-                <Design3
-                message={message} img={avatar?user.photo:null} from={from?from:user.displayName}/>
+                <Design
+                message={message} img={avatar?user.photo:null} from={from?from:user.displayName} clr={col} des={des}/>
             </div>  
                 :<></>}
 
@@ -149,7 +157,7 @@ function MakeCard() {
                 </div>  
                 :<></>}
             <div className="w-4/5 flex flex-col mx-auto h-screen">
-                <h1 className="text-3xl font-beb mx-auto mt-3 text-purple-600">Design your own</h1>
+                <h1 className="text-3xl font-beb mx-auto mt-1 text-purple-600">Design your own</h1>
                 <h1 className="text-8xl -mt-0 font-beb mx-auto text-purple-600">card</h1>
                 <div className="w-full flex flex-col mx-auto my-2 justify-between h-full">
                 <ThemeProvider theme={theme}>
@@ -157,10 +165,10 @@ function MakeCard() {
                         <h1 className="text-xl text-purple-700">From</h1>
                         <div className="flex flex-row justify-between">
                             <div className="flex flex-col my-auto">
-                                <TextField  id="outlined-basic" defaultValue={user.displayName} onChange={ (event) => setFrom(event.target.value) } label="Your name" variant="outlined"/>
+                                <TextField size="small"  id="outlined-basic" defaultValue={user.displayName} onChange={ (event) => setFrom(event.target.value) } label="Your name" variant="outlined"/>
                             </div>
                             <div className="flex flex-col my-auto mx-auto">
-                                <img className={"rounded-full w-16 mt-2 filter "+(avatar?"": "grayscale")} alt="" src={user.photo} />
+                                <img className={"rounded-full w-12 mt-2 filter "+(avatar?"": "grayscale")} alt="" src={user.photo} />
                                 <Checkbox defaultChecked onChange={e => {
                                     setAvatar(e.target.checked); }}/>
                             </div>
@@ -168,24 +176,38 @@ function MakeCard() {
                 </div>
                 <div>
                     <h1 className="text-xl text-purple-700">To</h1>
-                    <div className="flex flex-row justify-between mt-3">           
-                            <TextField error={(error===1 || error===3)?true:false} id="outlined-basic" onChange={ (event) => setTo(event.target.value) } label="Recipient's name" variant="outlined"/>
+                    <div className="flex flex-row justify-between mt-1">           
+                            <TextField size="small" error={(error===1 || error===3)?true:false} id="outlined-basic" onChange={ (event) => setTo(event.target.value) } label="Recipient's name" variant="outlined"/>
                     </div>
                 </div>
                 <div className="w-full">
                     <h1 className="text-xl text-purple-700">Message</h1>
                     <div className="flex justify-between mt-3">
-                   
-                    <TextField error={(error===2 || error===3)?true:false} id="outlined-basic" fullWidth onChange={ (event) => setMessage(event.target.value)} label="Enter your message here" variant="outlined"/>
-                
-                        
+                        <TextField error={(error===2 || error===3)?true:false} id="outlined-basic" fullWidth onChange={ (event) => setMessage(event.target.value)} label="Enter your message here" variant="outlined"/> 
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <h1 className="text-xl text-purple-700 mb-3">Select a design</h1>
+                    <h1 className="text-xl text-purple-700 mb-1">Select a color theme</h1>
                     <div className="flex flex-row justify-between">
-                        <img onClick={()=>setDes(1)} className={"rounded-xl overflow-hidden"+(des===1?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des3} alt=""/>
-                        <img onClick={()=>setDes(2)} className={"rounded-xl overflow-hidden"+(des===2?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des3} alt=""/>
+                        <div onClick={()=>setCol(0)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[0][1]+" to-"+colorsClass[0][2]+(col===0?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(1)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[1][1]+" to-"+colorsClass[1][2]+(col===1?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(2)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[2][1]+" to-"+colorsClass[2][2]+(col===2?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(3)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[3][1]+" to-"+colorsClass[3][2]+(col===3?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(4)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[4][1]+" to-"+colorsClass[4][2]+(col===4?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                    </div>
+                    <div className="flex flex-row  mt-2 justify-between">
+                        <div onClick={()=>setCol(5)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[5][1]+" to-"+colorsClass[5][2]+(col===5?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(6)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[6][1]+" to-"+colorsClass[6][2]+(col===6?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(7)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[7][1]+" to-"+colorsClass[7][2]+(col===7?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(8)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[8][1]+" to-"+colorsClass[8][2]+(col===8?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                        <div onClick={()=>setCol(9)} className={"rounded-xl w-12 h-12 flex bg-gradient-to-br from-"+colorsClass[9][1]+" to-"+colorsClass[9][2]+(col===9?" border outline-none ring-2 ring-purple-600 ring-offset-2":"")} ></div>
+                    </div>
+                    <h1 className="text-xl text-purple-700 mb-1 mt-3">Select a design</h1>
+                    <div className="flex h-12 flex-row justify-between">
+                        <img onClick={()=>setDes(4)} className={"rounded-xl w-12  overflow-hidden"+(des===4?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des4} alt=""/> 
+                        <img onClick={()=>setDes(1)} className={"rounded-xl w-12 overflow-hidden"+(des===1?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des1} alt=""/>
+                        <img onClick={()=>setDes(2)} className={"rounded-xl w-12  overflow-hidden"+(des===2?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des2} alt=""/> 
+                        <img onClick={()=>setDes(3)} className={"rounded-xl w-12  overflow-hidden"+(des===3?"border outline-none ring-2 ring-purple-600 ring-offset-2":"")} src={des3} alt=""/> 
                         
                     </div>
                 </div>
