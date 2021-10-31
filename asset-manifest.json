@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.b0269c4c.chunk.css",
-    "main.js": "./static/js/main.81607d0e.chunk.js",
-    "main.js.map": "./static/js/main.81607d0e.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.2dfd0e20.js",
-    "runtime-main.js.map": "./static/js/runtime-main.2dfd0e20.js.map",
-    "static/js/2.a1c2ad19.chunk.js": "./static/js/2.a1c2ad19.chunk.js",
-    "static/js/2.a1c2ad19.chunk.js.map": "./static/js/2.a1c2ad19.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.b0269c4c.chunk.css.map": "./static/css/main.b0269c4c.chunk.css.map",
-    "static/js/2.a1c2ad19.chunk.js.LICENSE.txt": "./static/js/2.a1c2ad19.chunk.js.LICENSE.txt",
-    "static/media/index.css": "./static/media/trebuc.8dc5d2dd.ttf",
-    "static/media/LogoW.37cd8117.svg": "./static/media/LogoW.37cd8117.svg",
-    "static/media/des1.a7f4f1b5.png": "./static/media/des1.a7f4f1b5.png",
-    "static/media/des2.ae454d6d.png": "./static/media/des2.ae454d6d.png",
-    "static/media/des3.00d9e46a.png": "./static/media/des3.00d9e46a.png",
-    "static/media/des4.775a41fb.png": "./static/media/des4.775a41fb.png",
-    "static/media/iitgnlogo.112de705.svg": "./static/media/iitgnlogo.112de705.svg"
+    "main.css": "/static/css/main.b275883e.chunk.css",
+    "main.js": "/static/js/main.fadc2c56.chunk.js",
+    "main.js.map": "/static/js/main.fadc2c56.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.948fb22b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.948fb22b.js.map",
+    "static/js/2.444f125e.chunk.js": "/static/js/2.444f125e.chunk.js",
+    "static/js/2.444f125e.chunk.js.map": "/static/js/2.444f125e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b275883e.chunk.css.map": "/static/css/main.b275883e.chunk.css.map",
+    "static/js/2.444f125e.chunk.js.LICENSE.txt": "/static/js/2.444f125e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/trebuc.8dc5d2dd.ttf",
+    "static/media/LogoW.37cd8117.svg": "/static/media/LogoW.37cd8117.svg",
+    "static/media/des1.a7f4f1b5.png": "/static/media/des1.a7f4f1b5.png",
+    "static/media/des2.ae454d6d.png": "/static/media/des2.ae454d6d.png",
+    "static/media/des3.00d9e46a.png": "/static/media/des3.00d9e46a.png",
+    "static/media/des4.775a41fb.png": "/static/media/des4.775a41fb.png",
+    "static/media/iitgnlogo.112de705.svg": "/static/media/iitgnlogo.112de705.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2dfd0e20.js",
-    "static/js/2.a1c2ad19.chunk.js",
-    "static/css/main.b0269c4c.chunk.css",
-    "static/js/main.81607d0e.chunk.js"
+    "static/js/runtime-main.948fb22b.js",
+    "static/js/2.444f125e.chunk.js",
+    "static/css/main.b275883e.chunk.css",
+    "static/js/main.fadc2c56.chunk.js"
   ]
 }
