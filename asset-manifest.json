@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paperlessDeploy/static/css/main.89b3fccb.chunk.css",
+    "main.css": "/paperlessDeploy/static/css/main.7eda62ef.chunk.css",
     "main.js": "/paperlessDeploy/static/js/main.9c8081dd.chunk.js",
     "main.js.map": "/paperlessDeploy/static/js/main.9c8081dd.chunk.js.map",
     "runtime-main.js": "/paperlessDeploy/static/js/runtime-main.7b437357.js",
@@ -8,7 +8,7 @@
     "static/js/2.de979e36.chunk.js": "/paperlessDeploy/static/js/2.de979e36.chunk.js",
     "static/js/2.de979e36.chunk.js.map": "/paperlessDeploy/static/js/2.de979e36.chunk.js.map",
     "index.html": "/paperlessDeploy/index.html",
-    "static/css/main.89b3fccb.chunk.css.map": "/paperlessDeploy/static/css/main.89b3fccb.chunk.css.map",
+    "static/css/main.7eda62ef.chunk.css.map": "/paperlessDeploy/static/css/main.7eda62ef.chunk.css.map",
     "static/js/2.de979e36.chunk.js.LICENSE.txt": "/paperlessDeploy/static/js/2.de979e36.chunk.js.LICENSE.txt",
     "static/media/index.css": "/paperlessDeploy/static/media/trebuc.8dc5d2dd.ttf",
     "static/media/LogoW.37cd8117.svg": "/paperlessDeploy/static/media/LogoW.37cd8117.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.7b437357.js",
     "static/js/2.de979e36.chunk.js",
-    "static/css/main.89b3fccb.chunk.css",
+    "static/css/main.7eda62ef.chunk.css",
     "static/js/main.9c8081dd.chunk.js"
   ]
 }
