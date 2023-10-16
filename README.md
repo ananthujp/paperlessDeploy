@@ -15,5 +15,3 @@ Customizable Cards: Choose from a variety of templates and customize colors, tex
 
 <h3>Responsive Design:</h3> The application is responsive and works seamlessly across various devices, including desktops, tablets, and smartphones.
 
-<h2>Demo</h2>
-Check out the live demo of the Diwali Greeting Card Generator here.
