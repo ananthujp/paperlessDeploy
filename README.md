@@ -1,44 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<h1>Paperless Diwali - Diwali Greeting Card Generator </h1>
 
-## Available Scripts
+Diwali Greeting Card Generator is a web application that allows users to create personalized digital greeting cards for the Diwali festival. With a user-friendly interface, users can customize colors, designs, and messages to create unique and heartfelt greetings. The application also provides the option to log in with Google ID and send the created cards directly to friends and family.
 
-In the project directory, you can run:
+<h3>Demo</h3>
+Check out the live demo <a href="ananthujp.github.io/paperlessDeploy">here</a>.
 
-### `yarn start`
+<img src="https://github.com/ananthujp/paperlessDeploy/blob/master/DiwaliPreview.png" alt="" />
+<h2>Features</h2>
+Customizable Cards: Choose from a variety of templates and customize colors, text, and design elements to create a unique Diwali greeting card.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3>Google Login:</h3> Users can log in with their Google ID, ensuring a seamless and secure authentication process.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h3>Send Cards:</h3> Send the personalized greeting cards directly to friends and family via email, social media, or messaging platforms.
 
-### `yarn test`
+<h3>Responsive Design:</h3> The application is responsive and works seamlessly across various devices, including desktops, tablets, and smartphones.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h2>Demo</h2>
+Check out the live demo of the Diwali Greeting Card Generator here.
